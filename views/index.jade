@@ -1,0 +1,29 @@
+extends layout
+var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+block content
+  div.container
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      span.navbar-brand.mb-0
+        h1 FCC Voting App
+      button.navbar-brand#btn-home Home
+      button.navbar-brand#btn-home My Polls
+      button.navbar-brand#btn-home New Poll
+      button.navbar-brand#btn-home User
+  if user
+    p Hello #{user.username}
+    img(src=user.photos[0].value)
+  else
+    a(href="/twitter/login") Login using twitter
+      
+    //- - for (var i = 0; i < 10; i++) {
+    //-   br
+    //-   div.row.main
+    //-     - for (var j = 0; j < 10; j++) {
+    //-         
+    //-         div.col
+    //-           h1 test
+    //-     - }
+    //- -}
+    //- 
+    
+  
