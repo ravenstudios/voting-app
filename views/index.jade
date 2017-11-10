@@ -14,7 +14,11 @@ block content
     img(src=user.photos[0].value)
   else
     a(href="/twitter/login") Login using twitter
-      
+    
+  button(id="chartBtn") Chart
+  canvas(id="myChart", width="400", height="400")
+  
+     
     //- - for (var i = 0; i < 10; i++) {
     //-   br
     //-   div.row.main
